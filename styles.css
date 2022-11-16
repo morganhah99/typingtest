@@ -16,7 +16,7 @@ body, .quote-input {
 }
 
 .container {
-    background-color: #696969;
+    background-color: #000000;
     padding: 1rem;
     border-radius: .5rem;
     width: 700px;
@@ -35,6 +35,7 @@ body, .quote-input {
     margin-bottom: 1rem;
     margin-left: calc(1rem + 2px);
     margin-right: calc(1rem + 2px);
+    color: #808080;
 }
 
 .quote-input {
@@ -48,8 +49,18 @@ body, .quote-input {
     padding: .5rem 1rem;
     font-size: 1rem;
     border-radius: .5rem;
+    color: white;
 }
 
 .quote-input:focus {
     border-color: black;
+}
+
+.correct {
+    color: white;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
 }
