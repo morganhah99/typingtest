@@ -51,10 +51,12 @@ async function renderNewQuote () {
 let startTime
 
 function startTimer () {
-    timerElement.innerText = 60
     startTime  = new Date()
     setInterval(() => {
         timer.innerText = getTimerTime()
+        if (timer.innerText == 60){
+            renderNewQuote()
+        }
     }, 1000)
 }
 
